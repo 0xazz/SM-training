@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--inclue the necessary objects-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot-control</title>
+    <link rel="stylesheet" href="css/control.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<body>
+    <div class="bgimg">
+        <!-- background image container -->
+        <div class="w3-display-middle">
+            <div class="w3-large w3-center" style="background-color: rgba(255, 255, 255, 0.6);">
+                <!-- engines sliders with values from 0 to 180-->
+                <div class="slidecontainer">
+                    <p class="w3-large w3-center">Engine 1</p>
+                    <input type="range" min="0" max="180" value="0" class="slider" id="eng1">
+                    <h7 id="out1"></h7>
+                </div>
+                <div class="slidecontainer">
+                    <p>Engine 2</p>
+                    <input type="range" min="0" max="180" value="0" class="slider" id="eng2">
+                    <h7 id="out2"></h7>
+                </div>
+                <div class="slidecontainer">
+                    <p>Engine 3</p>
+                    <input type="range" min="0" max="180" value="0" class="slider" id="eng3">
+                    <h7 id="out3"></h7>
+                </div>
+                <div class="slidecontainer">
+                    <p>Engine 4</p>
+                    <input type="range" min="0" max="180" value="0" class="slider" id="eng4">
+                    <h7 id="out4"></h7>
+                </div>
+                <div class="slidecontainer">
+                    <p>Engine 5</p>
+                    <input type="range" min="0" max="180" value="0" class="slider" id="eng5">
+                    <h7 id="out5"></h7>
+                </div>
+                <div class="slidecontainer">
+                    <p>Engine 6</p>
+                    <input type="range" min="0" max="180" value="0" class="slider" id="eng6">
+                    <h7 id="out6"></h7>
+                </div>
+            </div>
+            <br>
+            <!-- save and send data buttons -->
+            <input type="button" value="save" id="save" onclick="sendData();">
+            <input type="button" value="start" id="start" onclick="start();">
+        </div>
+    </div>
+    <script src="js/control.js"></script>
+</body>
+
+</html>
