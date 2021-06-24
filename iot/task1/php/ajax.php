@@ -7,9 +7,11 @@ $eng3 = $_GET['eng3'];
 $eng4 = $_GET['eng4'];
 $eng5 = $_GET['eng5'];
 $eng6 = $_GET['eng6'];
+
+//in case start button was pressed
 if(isset($botstat)) $botstat = $_GET['botstat'];
 
-//prepare the database connection cridentials 
+//prepare the database connection credentials 
 $server = "localhost";
 $user = "root";
 $pass = "";
