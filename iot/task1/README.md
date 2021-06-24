@@ -10,7 +10,7 @@ control.js: implements user-friendly features and will send the data to the host
 
 ajax.php: responsible to update the data in the database.
 
-robot-page.php: the robot can use this page to retrieve the data from the database, it's also human-readable.
+robot-page.php: the robot can use this page to retrieve the data from the database, it's also human-friendly.
 
 Done by, 
 
