@@ -1,0 +1,48 @@
+<!-- VIEW ME HERE https://0xazz.github.io/SM-training/iot/task2/bot-control.html -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--inclue the necessary objects-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot-control</title>
+    <link rel="stylesheet" href="css/w3/control.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+
+<body>
+    <!-- background image container -->
+    <div class="bgimg">
+        <div class="w3-display-middle">
+            <div class="w3-large w3-center" style="background-color: rgba(255, 255, 255, 0.6);">
+                <div>
+                    <!-- Motors sliders with values from 0 to 180-->
+                    <input type="button" value="Forward" id="F" onclick="sendMove(document.getElementById('F').id);">
+                </div>
+                <br>
+                <div>
+                    <!-- Motors sliders with values from 0 to 180-->
+                    <input type="button" value="Left" id="L" onclick="sendMove(document.getElementById('L').id);">
+                    <input style="border-color: brown;" type="button" value="Stop" id="S"
+                        onclick="sendMove(document.getElementById('S').id);">
+                    <input type="button" value="Right" id="R" onclick="sendMove(document.getElementById('R').id);">
+                </div>
+                <br>
+                <div>
+                    <!-- Motors sliders with values from 0 to 180-->
+                    <input type="button" value="Backward" id="B" onclick="sendMove(document.getElementById('B').id);">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/control.js"></script>
+</body>
+
+</html>
+<!-- <p class="w3-large w3-center">Motor 1</p> -->
