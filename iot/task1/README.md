@@ -14,6 +14,4 @@ robot-page.php: the robot can use this page to retrieve the data from the databa
 
 Done by, 
 
-Abdalaziz Tawila,
-
-Arwa Tawila
+Abdalaziz Tawila, Arwa Tawila
