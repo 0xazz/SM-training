@@ -1,3 +1,4 @@
+/* <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> */
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
@@ -236,7 +237,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-  background-image: url('css/background.jpg');
+  background-image: url('../background.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
