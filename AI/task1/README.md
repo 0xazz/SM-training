@@ -6,7 +6,7 @@
 
 ## Steps
 
-### Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic in Rviz.
+ Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic in Rviz.
 
 #### 1. Assuming ubuntu 20.04 is already running, install  ROS noetic by following this tutorial.
 ```
