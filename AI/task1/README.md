@@ -44,3 +44,4 @@
 
 #### 7. Follow this simple tutorial to fix the joint_state_publisher issue that appears in ROS noetic
 
+![joint_state](joint_state_publisher-issue.png)
