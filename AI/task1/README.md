@@ -51,4 +51,7 @@
 
 #### 7. Follow this simple tutorial to fix the joint_state_publisher issue that appears in ROS noetic
 
+	https://github.com/0xazz/SM-training/tree/main/AI/task2
+
+
 ![joint_state](joint_state_publisher-issue.png)
