@@ -50,6 +50,11 @@ https://github.com/0xazz/SM-training/tree/main/AI/task2
 ```
 
 ### 8. To run the simulation using Gazebo 
+first, give permession to the script
+```
+    chmod +x catkin_ws/src/arduino_robot_arm/robot_arm_pkg/scripts/joint_states_to_gazebo.py
+```
+then run these commands
 ```
 $ roslaunch robot_arm_pkg check_motors.launch
 $ roslaunch robot_arm_pkg check_motors_gazebo.launch
