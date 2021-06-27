@@ -1,10 +1,10 @@
 # arduino_robot_arm in ROS noetic
 
-	This demo is prepared for the submission of the first AI task in the summer training offered by Smart Methods Co.
+  This demo is prepared for the submission of the first AI task in the summer training offered by Smart Methods Co.
 
-	It is concerned with preparing the required environment to run a robot arm simulation created by @smart-methods.
+  It is concerned with preparing the required environment to run a robot arm simulation created by @smart-methods.
 
-	Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic.
+  Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic.
 
 ### 1. Assuming ubuntu 20.04 is already running, install  ROS noetic by following this tutorial.
 ```
@@ -22,7 +22,7 @@
 	$ git clone https://github.com/smart-methods/arduino_robot_arm 
 ```
 
-### 4. It's important to install all the dependencies for ROS noetic instead of melodic or kinetic as follows:
+#### 4. It's important to install all the dependencies for ROS noetic instead of melodic or kinetic as follows:
 ```
 	$ cd ~/catkin_ws
 	$ rosdep install --from-paths src --ignore-src -r -y
