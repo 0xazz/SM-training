@@ -1,10 +1,10 @@
 # arduino_robot_arm in ROS noetic
 
-This demo is prepared for the submission of the first AI task in the summer training offered by Smart Methods Co.
+	This demo is prepared for the submission of the first AI task in the summer training offered by Smart Methods Co.
 
-It is concerned with preparing the required environment to run a robot arm simulation created by @smart-methods.
+	It is concerned with preparing the required environment to run a robot arm simulation created by @smart-methods.
 
-Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic.
+	Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic.
 
 ### 1. Assuming ubuntu 20.04 is already running, install  ROS noetic by following this tutorial.
 ```
@@ -18,7 +18,7 @@ Following, are the detailed steps and fixes to run the arduino_robot_arm simulat
 
 ### 3. Go ahead and clone the arduino_robot_arm package in the catkin_ws source files:
 ```
-$ cd ~/catkin_ws/src
+	$ cd ~/catkin_ws/src
 	$ git clone https://github.com/smart-methods/arduino_robot_arm 
 ```
 
@@ -39,7 +39,6 @@ $ cd ~/catkin_ws/src
 ```
 ### 6. To run the simulation using Rviz and control it by joint_state_publisher:
 ```
-	$ roslaunch robot_arm_pkg check_motors.launch
 	$ roslaunch robot_arm_pkg check_motors.launch
 ```
 
