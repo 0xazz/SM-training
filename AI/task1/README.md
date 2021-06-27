@@ -3,15 +3,10 @@
   This demo is prepared for the submission of the first AI task in the summer training offered by Smart Methods Co.
 
   It is concerned with preparing the required environment to run a robot arm simulation created by @smart-methods.
- 
-### Results
-  Want to check the result? have a look at this link 
-  ```
-  https://drive.google.com/file/d/1h2L0IssogK2DOlL2nAsip2lZ_cnc5neY/view?usp=sharing
-```
-### Steps
 
-  Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic in Rviz.
+## Steps
+
+### Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic in Rviz.
 
 #### 1. Assuming ubuntu 20.04 is already running, install  ROS noetic by following this tutorial.
 ```
@@ -53,5 +48,13 @@
 
 	https://github.com/0xazz/SM-training/tree/main/AI/task2
 
-
 ![joint_state](joint_state_publisher-issue.png)
+
+
+ 
+## Results
+  Want to check the result? have a look at this link 
+  ```
+  https://drive.google.com/file/d/1h2L0IssogK2DOlL2nAsip2lZ_cnc5neY/view?usp=sharing
+```
+
