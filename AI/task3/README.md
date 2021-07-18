@@ -1,34 +1,51 @@
-This demo is prepared for the submission of the first AI task in the summer training offered by Smart Methods Co.
+# Creating a map using Turtlebot3 and SLAM on ROS noetic
 
-It is concerned with preparing the required environment to run a robot arm simulation created by @smart-methods.
+## Overview
 
-Following, are the detailed steps and fixes to run the arduino_robot_arm simulation on ubuntu 20.04 and ROS noetic.
+This demo is prepared for the submission of the third AI task in the summer training offered by Smart Methods Co.
 
-1. Assuming ubuntu 20.04 is already running, install  ROS noetic by following this tutorial.
-	http://wiki.ros.org/noetic/Installation/Ubuntu
+It is concerned with creating and saving a map using Turtlebot3 and SLAM approach.
 
-2. Create a workspace for catkin.
-	http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+## Steps
 
-3. Go ahead and clone the arduino_robot_arm package in the catkin_ws source files:
-	$ cd ~/catkin_ws/src
-	$ git clone https://github.com/smart-methods/arduino_robot_arm 
+Following, are the steps to run the turtlebot3_world simulation and creating a map on ubuntu 20.04 and ROS noetic.
 
-4. It's important to install all the dependencies for ROS noetic instead of melodic or kinetic as follows:
-	$ cd ~/catkin_ws
-	$ rosdep install --from-paths src --ignore-src -r -y
-	$ sudo apt-get install ros-noetic-moveit
-	$ sudo apt-get install ros-noetic-joint-state-publisher ros-noetic-joint-state-publisher-gui
-	$ sudo apt-get install ros-noetic-gazebo-ros-control joint-state-publisher
-	$ sudo apt-get install ros-noetic-ros-controllers ros-noetic-ros-control
+### 1. Assuming turtlebot3 is already working on ROS noetic, choose your preferred version of turtlebot3 which is 'burger' in this case.
+	$ export TURTLEBOT3_MODEL=burger
 
-5. When all the dependencies are downloaded, compile the package:
-	$ cd ~/catkin_ws
-	$ catkin_make
+### 2. Run the turtlebot3_world.launch file with gazebo 
+	$ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+	
+### 3. To control the robot with telop, run its node in a new terminal
+	$ export TURTLEBOT3_MODEL=burger
+	$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
-6. To run the simulation using Rviz and control it by joint_state_publisher:
-	$ roslaunch robot_arm_pkg check_motors.launch
-	$ roslaunch robot_arm_pkg check_motors.launch
+### 4. Now, run the SLAM node in a new terminal
+	$ export TURTLEBOT3_MODEL=burger
+	$ roslaunch turtlebot3_slam turtlebot3_slam.launch
 
-7. Follow this simple tutorial to fix the joint_state_publisher issue that appears in ROS noetic
+### 5. Move your robot around using the instructions in the telop terminal until the map is successfully created
+	 Control Your TurtleBot3!
+ 	---------------------------
+ 	Moving around:
+  	      w
+  	 a    s    d
+  	      x
+
+ 	w/x : increase/decrease linear velocity
+ 	a/d : increase/decrease angular velocity
+	space key, s : force stop
+
+ 	CTRL-C to quit
+
+### 6. To save the map, make sure map_server is installed properly on your system
+	$ rosrun map_server map_saver -f REPLACE_WITH_PREFERRED_LOCATION
+
+### 7. The map is created and saved!
+
+#### check the video on this link
+	https://drive.google.com/file/d/1G_kJFDD5Dys1f1_NnaLS3Zzje3INGw4x/view?usp=sharing
+
+![map](map.png)
+
 
